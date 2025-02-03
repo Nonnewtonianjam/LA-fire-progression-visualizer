@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Fire Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>LA Fire Progression Dashboard</h1>
+            <div class="time-controls">
+                <button id="playButton">Play Animation</button>
+                <input type="date" id="dateSelector" min="2025-01-07" max="2025-01-30">
+            </div>
+        </header>
+        <main>
+            <div id="map"></div>
+            <div class="info-panel">
+                <div class="fire-info">
+                    <h2>Fire Information</h2>
+                    <div id="fireDetails"></div>
+                </div>
+                <div class="aqi-info">
+                    <h2>Air Quality Index</h2>
+                    <div id="aqiDetails"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
